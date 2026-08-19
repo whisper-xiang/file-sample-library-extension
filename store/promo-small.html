@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html, body { margin: 0; width: 440px; height: 280px; overflow: hidden; }
+      body {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 0 28px;
+        background: #e9f1ec url("../public/bg.png") center / cover no-repeat;
+        color: #1b2d24;
+        font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .mark {
+        flex: none;
+        display: grid;
+        width: 88px;
+        height: 88px;
+        place-items: center;
+        border-radius: 22px;
+        background: #e9f1ec;
+        color: #2f6f4e;
+      }
+      .mark svg { width: 44px; height: 44px; }
+      h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -.03em; }
+      p { margin: 0; color: #4d6a5a; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+        <path d="M14 2v6h6"/>
+      </svg>
+    </div>
+    <div>
+      <h1>文件样本库</h1>
+      <p>轻量测试文件，一键下载</p>
+    </div>
+  </body>
+</html>

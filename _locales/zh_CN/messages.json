@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "文件样本库",
+    "description": "Extension name shown in Chrome and the Web Store."
+  },
+  "extDescription": {
+    "message": "一键下载常见格式的轻量测试文件，用于上传、预览与解析测试。",
+    "description": "Short store description, max 132 characters."
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html, body { margin: 0; width: 1400px; height: 560px; overflow: hidden; }
+      body {
+        display: grid;
+        grid-template-columns: 620px 1fr;
+        background: #14201a;
+        color: #edf6f1;
+        font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 72px;
+        background: #e9f1ec url("../public/bg.png") left 18% / cover no-repeat;
+        color: #1b2d24;
+      }
+      .mark {
+        display: grid;
+        width: 72px;
+        height: 72px;
+        place-items: center;
+        margin-bottom: 28px;
+        border-radius: 18px;
+        background: #e9f1ec;
+        color: #2f6f4e;
+      }
+      .mark svg { width: 36px; height: 36px; }
+      h1 { margin: 0 0 12px; font-size: 48px; letter-spacing: -.04em; }
+      p { margin: 0; color: #4d6a5a; font-size: 20px; line-height: 1.45; max-width: 16em; }
+      .right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        padding: 96px 72px;
+      }
+      .card {
+        padding: 18px;
+        border: 1px solid #2a3d33;
+        border-radius: 16px;
+        background: #1a2a22;
+      }
+      .tag {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 6px;
+        background: #e9f1ec;
+        color: #1b2d24;
+        font: 800 11px/1 "SF Mono", Consolas, monospace;
+      }
+      .card h2 { margin: 12px 0 6px; font-size: 18px; }
+      .card p { margin: 0; color: #a8c0b2; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+          <path d="M14 2v6h6"/>
+        </svg>
+      </div>
+      <h1>文件样本库</h1>
+      <p>给上传、预览和解析测试准备的轻量样本，包括 JSON、PDF、DWG 和 OCF。</p>
+    </div>
+    <div class="right">
+      <article class="card"><span class="tag">JSON</span><h2>JSON 数据</h2><p>常见 API 结构</p></article>
+      <article class="card"><span class="tag">PDF</span><h2>PDF 文档</h2><p>单页合法 PDF</p></article>
+      <article class="card"><span class="tag">DWG</span><h2>DWG 图纸</h2><p>DWG R21 样本</p></article>
+      <article class="card"><span class="tag">OCF</span><h2>OCF 专用文件</h2><p>OCF-P 二进制样本</p></article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文件样本库</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <div class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+          </div>
+          <h1>文件样本库</h1>
+        </div>
+        <div class="header-actions">
+          <label class="import-button" id="import-button" for="import">导入</label>
+          <input id="import" type="file" multiple hidden />
+          <div class="contact-card">
+            <button type="button" class="contact-button" aria-label="联系方式" title="联系方式">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 3C6.48 3 2 6.94 2 11.8c0 2.8 1.48 5.3 3.8 6.93L5 22l3.48-1.9c1.07.3 2.25.47 3.52.47c5.52 0 10-3.94 10-8.8S17.52 3 12 3zm-4.2 9.3c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3s1.3.58 1.3 1.3s-.58 1.3-1.3 1.3zm4.2 0c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3s1.3.58 1.3 1.3s-.58 1.3-1.3 1.3zm4.2 0c-.72 0-1.3-.58-1.3-1.3s.58-1.3 1.3-1.3s1.3.58 1.3 1.3s-.58 1.3-1.3 1.3z"/>
+              </svg>
+            </button>
+            <div class="contact-popover" aria-hidden="true">
+              <img src="contact-wechat.png" alt="微信号轻语二维码" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="filters" id="filters" aria-label="文件格式筛选">
+        <button type="button" data-filter="all" class="active">全部</button>
+        <button type="button" data-filter="text">文本</button>
+        <button type="button" data-filter="data">数据</button>
+        <button type="button" data-filter="media">媒体</button>
+        <button type="button" data-filter="cad">CAD</button>
+        <button type="button" data-filter="imported">我的</button>
+      </nav>
+
+      <section class="catalog" aria-label="可下载样本">
+        <label class="search-field">
+          <span class="visually-hidden">搜索样本</span>
+          <input id="search" type="search" placeholder="搜索" autocomplete="off" spellcheck="false" />
+        </label>
+        <div class="file-table-wrap" id="list" aria-live="polite"></div>
+      </section>
+
+      <footer class="app-footer">
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

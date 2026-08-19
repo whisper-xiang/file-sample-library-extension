@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Store screenshot</title>
+    <style>
+      html, body { margin: 0; width: 1280px; height: 800px; overflow: hidden; }
+      body {
+        display: grid;
+        place-items: center;
+        background: #14201a url("../public/bg.png") center 40% / cover no-repeat;
+        font-family: "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: #edf6f1;
+      }
+      .stage {
+        width: 1180px;
+        height: 720px;
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        gap: 48px;
+        align-items: center;
+        padding: 0 28px;
+      }
+      .copy h1 { margin: 0 0 12px; font-size: 42px; letter-spacing: -.04em; }
+      .copy p { margin: 0; color: #a8c0b2; font-size: 18px; line-height: 1.5; max-width: 28ch; }
+      .copy .kicker { margin-bottom: 10px; color: #3eaf7c; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+      iframe {
+        width: 400px;
+        height: 600px;
+        border: 1px solid #2a3d33;
+        border-radius: 16px;
+        background: #e9f1ec;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="copy">
+        <p class="kicker" id="kicker">Developer tools</p>
+        <h1 id="title">文件样本库</h1>
+        <p id="caption">上传、预览、解析测试用的轻量样本，点一下就能下载。</p>
+      </div>
+      <iframe id="frame" title="扩展弹窗"></iframe>
+    </div>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const filter = params.get("filter") || "all";
+      const query = params.get("q") || "";
+      const captions = {
+        all: ["常用格式目录", "文本、数据、图片、音视频和 CAD 样本，筛选后点图标下载。"],
+        cad: ["CAD / 专用格式", "内置 DWG R21 与 OCF-P 二进制样本，适合解析与上传测试。"],
+        search: ["搜索与导入", "按格式名查找样本，也可把常用测试文件保存在本地。"],
+      };
+      const key = query ? "search" : filter === "cad" ? "cad" : "all";
+      document.getElementById("kicker").textContent = captions[key][0];
+      document.getElementById("caption").textContent = captions[key][1];
+      const src = new URL("../popup.html", location.href);
+      if (filter !== "all") src.searchParams.set("filter", filter);
+      if (query) src.searchParams.set("q", query);
+      document.getElementById("frame").src = src.href;
+    </script>
+  </body>
+</html>

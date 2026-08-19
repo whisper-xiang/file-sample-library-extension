@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "File Sample Library",
+    "description": "Extension name shown in Chrome and the Web Store."
+  },
+  "extDescription": {
+    "message": "Download small test files in common formats for upload, preview, and parser testing.",
+    "description": "Short store description, max 132 characters."
+  }
+}
