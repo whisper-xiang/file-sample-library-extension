@@ -32,15 +32,18 @@ Developer Tools（开发者工具）
 使用方式：点击工具栏图标 → 按分类筛选或搜索 → 点击下载。文件会保存到浏览器默认下载目录。
 
 隐私：无账号、无统计、无广告。仅申请 downloads 权限，且只在你点击下载后写入默认下载目录。
+
+项目主页：https://github.com/whisper-xiang/file-sample-library-extension
+隐私政策：https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md
 ```
 
 ## 商店附加链接
 
 | 字段 | 填写 |
 |------|------|
-| Homepage URL | 仓库推送到 GitHub 后填仓库地址 |
-| Support URL | 可用 Issues 页，或邮箱 xiangergou000@gmail.com |
-| Privacy policy | 见 `privacy-practices.md`，需公网 HTTPS |
+| Homepage URL | `https://github.com/whisper-xiang/file-sample-library-extension` |
+| Support URL | `https://github.com/whisper-xiang/file-sample-library-extension/issues` |
+| Privacy policy | `https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md` |
 
 ## 内容分级
 

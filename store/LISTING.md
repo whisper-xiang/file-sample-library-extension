@@ -31,15 +31,13 @@ python3 store/make-assets.py
 4. 按提示完成身份核验（证件）
 5. 免费个人扩展：Trader 选 **Non-trader**
 
-## 2. 先把隐私政策放到公网 HTTPS
+## 2. 隐私政策（已上线）
 
-商店 Privacy 页需要一个公网链接。把本仓库推到 GitHub 后，用：
+商店 Privacy 页填：
 
 ```
-https://github.com/<你的用户名>/<仓库名>/blob/main/PRIVACY.md
+https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md
 ```
-
-或把 `store/privacy.html` 放到 GitHub Pages / Cloudflare Pages。不要填本地文件路径。未上线之前不要提交审核。
 
 ## 3. 打 zip
 

@@ -2,18 +2,16 @@
 
 后台路径：Developer Dashboard → 你的扩展 → **Privacy**。
 
-隐私政策需要 **HTTPS 公网地址**。把根目录 `PRIVACY.md` 或 `store/privacy.html` 推到 GitHub / GitHub Pages 后，把 URL 填进后台。不要填本地路径。
-
-示例（仓库推送到 GitHub 后替换为真实地址）：
+隐私政策需要 **HTTPS 公网地址**。把下面链接填进后台 Privacy 页：
 
 ```
-https://github.com/<你的用户名>/<仓库名>/blob/main/PRIVACY.md
+https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md
 ```
 
-或 Pages：
+HTML 版（备用）：
 
 ```
-https://<你的用户名>.github.io/<仓库名>/store/privacy.html
+https://github.com/whisper-xiang/file-sample-library-extension/blob/main/store/privacy.html
 ```
 
 ---

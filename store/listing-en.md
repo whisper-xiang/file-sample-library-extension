@@ -32,12 +32,15 @@ You can also import your own test files. They stay in this browser (up to 8 file
 Open the toolbar icon, filter or search, then click Download. Files go to your default Downloads folder.
 
 Privacy: no account, analytics, or ads. The only permission is downloads, used only after you click Download.
+
+Homepage: https://github.com/whisper-xiang/file-sample-library-extension
+Privacy policy: https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md
 ```
 
 ## Extra listing links
 
 | Field | Value |
 |------|------|
-| Homepage URL | GitHub repo URL after you push |
-| Support URL | Issues page, or xiangergou000@gmail.com |
-| Privacy policy | See `privacy-practices.md` (public HTTPS URL) |
+| Homepage URL | `https://github.com/whisper-xiang/file-sample-library-extension` |
+| Support URL | `https://github.com/whisper-xiang/file-sample-library-extension/issues` |
+| Privacy policy | `https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md` |
