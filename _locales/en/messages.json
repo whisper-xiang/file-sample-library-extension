@@ -4,7 +4,7 @@
     "description": "Extension name shown in Chrome and the Web Store."
   },
   "extDescription": {
-    "message": "Download small test files in common formats for upload, preview, and parser testing.",
+    "message": "Small sample files for upload, preview, and parser tests, ready to download from the toolbar.",
     "description": "Short store description, max 132 characters."
   }
 }

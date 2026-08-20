@@ -72,6 +72,13 @@ Listing 图片上传：
 
 首次审核常见几天到两周。`downloads` 权限把 Test instructions 填完整会快一些。
 
+## 6. 若因「说明关键字过多」被拒（Yellow Argon）
+
+1. 打开 Store listing，把**详细介绍**整段换成 [`listing-zh.md`](listing-zh.md) / [`listing-en.md`](listing-en.md) 里的新稿（已改成叙述，不再罗列 TXT、JSON、MP3 等）。
+2. 简短介绍也换成同一文件里的新句。
+3. 上传 `dist/file-sample-library.zip`（版本已升到 **1.3.1**）。
+4. 提交一份**新草稿**。不要把旧说明原样再贴回去。
+
 ## 发布之后
 
 1. 把 Chrome 商店链接补进根目录 `README.md`

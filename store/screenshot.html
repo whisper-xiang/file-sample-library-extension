@@ -47,9 +47,9 @@
       const filter = params.get("filter") || "all";
       const query = params.get("q") || "";
       const captions = {
-        all: ["常用格式目录", "文本、数据、图片、音视频和 CAD 样本，筛选后点图标下载。"],
-        cad: ["CAD / 专用格式", "内置 DWG R21 与 OCF-P 二进制样本，适合解析与上传测试。"],
-        search: ["搜索与导入", "按格式名查找样本，也可把常用测试文件保存在本地。"],
+        all: ["样本目录", "按类别筛选后点图标下载。"],
+        cad: ["图纸与专用", "少量图纸类样本，适合解析与上传自测。"],
+        search: ["搜索与导入", "按名称查找样本，也可把常用文件保存在本地。"],
       };
       const key = query ? "search" : filter === "cad" ? "cad" : "all";
       document.getElementById("kicker").textContent = captions[key][0];

@@ -4,13 +4,15 @@ Add English as an extra locale. The in-product UI is Simplified Chinese.
 
 Name: `File Sample Library`
 
+> Do not paste a laundry list of extensions (TXT, JSON, MP3, …). The previous draft was rejected for keyword stuffing (Yellow Argon).
+
 ## Summary (≤132 characters)
 
 ```
-Download small test files in common formats for upload, preview, and parser testing.
+Small sample files for upload, preview, and parser tests, ready to download from the toolbar.
 ```
 
-(86 characters — also used as `_locales/en/messages.json`)
+(93 characters)
 
 ## Category
 
@@ -19,19 +21,13 @@ Developer Tools
 ## Detailed description
 
 ```
-File Sample Library gives developers and testers tiny sample files for upload, preview, and parser checks.
+When you are checking an upload form, a preview pane, or a parser, you often need a tiny file that is valid enough to exercise the path. File Sample Library keeps a handful of those fixtures in a toolbar popup. Filter or search, then download into your default Downloads folder.
 
-Built-in formats:
-• Text: TXT, Markdown, HTML
-• Data: JSON, CSV, XML, YAML, ZIP
-• Media: SVG, PNG, JPEG, WebP, PDF, MP3, WAV, MP4
-• CAD / specialty: DWG (R21) and an OCF-P binary sample
+The built-in set is grouped by what you are testing: everyday writing, structured records, pictures and documents, short audio or video, and a few drawing or specialty binaries. Files are kept small on purpose so they are cheap to download again and again during local work.
 
-You can also import your own test files. They stay in this browser (up to 8 files, 2 MB each) and are never uploaded.
+You can also import a fixture you already use. It stays in this browser (up to eight files, two megabytes each) and is never sent to a server.
 
-Open the toolbar icon, filter or search, then click Download. Files go to your default Downloads folder.
-
-Privacy: no account, analytics, or ads. The only permission is downloads, used only after you click Download.
+There is no account, no analytics, and no ads. The only permission is downloads, and it runs only after you click Download.
 
 Homepage: https://github.com/whisper-xiang/file-sample-library-extension
 Privacy policy: https://github.com/whisper-xiang/file-sample-library-extension/blob/main/PRIVACY.md
